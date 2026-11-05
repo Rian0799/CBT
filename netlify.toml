@@ -1,0 +1,59 @@
+[build]
+  command = "npm run build"
+  publish = "public"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/index.php"
+  to = "/"
+  status = 302
+
+[[redirects]]
+  from = "/login.php"
+  to = "/"
+  status = 302
+
+[[redirects]]
+  from = "/logout.php"
+  to = "/"
+  status = 302
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/"
+  status = 302
+
+[[redirects]]
+  from = "/guru/*"
+  to = "/"
+  status = 302
+
+[[redirects]]
+  from = "/operator/*"
+  to = "/"
+  status = 302
+
+[[redirects]]
+  from = "/ujian/*"
+  to = "/"
+  status = 302
+
+[[redirects]]
+  from = "/database/*"
+  to = "/"
+  status = 302
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "same-origin"
+    X-Frame-Options = "DENY"
+
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Cache-Control = "no-store"
