@@ -1,3 +1,5 @@
+> **Deployment Netlify:** Versi aplikasi untuk Netlify tersedia dengan frontend statis, Functions, Identity, dan Netlify Database. Ikuti [panduan migrasi dan penyiapan](MIGRATION.md). Dokumentasi XAMPP di bawah adalah referensi untuk versi PHP lama; jangan publikasikan root repositori.
+
 # CBT SMART EXAM PRO - Aplikasi Ujian Berbasis Komputer & Asesmen Pintar
 
 Aplikasi Web CBT (Computer-Based Test) mutakhir yang dirancang khusus untuk lingkungan **XAMPP (Apache, MySQL, PHP 8+)** dengan dukungan fleksibel untuk **semua jenjang pendidikan (SD/MI, SMP/MTs, SMA/SMK/MA)**, **6 Jenis Tipe Soal Asesmen Standar**, manajemen role berjenjang (**Admin, Guru, Operator, Siswa**), pemantauan real-time, dan evaluasi psikometri butir soal.
